@@ -1,0 +1,20 @@
+.s_random_jobs {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.s_random_jobs .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.s_random_jobs .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.s_random_jobs .card-text {
+    font-size: 1em;
+    color: #555;
+}

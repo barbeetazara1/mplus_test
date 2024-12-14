@@ -1,0 +1,29 @@
+<odoo>
+    <template id="bitcoin_graph_snippet" name="Bitcoin Price Graph">
+        <!-- Section for Bitcoin Price Graph -->
+        <section class="s_bitcoin_graph">
+            <div class="container">
+                <!-- Title for the Bitcoin Graph Section -->
+                <h2 class="text-center">Bitcoin Price (USD)</h2>
+
+                <!-- Graph Container -->
+                <div id="bitcoin-graph-container" class="text-center">
+                    <!-- The graph will be rendered inside this container by OWL component -->
+                    <t t-raw="0"/>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Template for including JavaScript -->
+    <template id="assets_frontend" name="bitcoin_graph_assets" inherit_id="web.assets_frontend">
+        <xpath expr="." position="inside">
+            <!-- Include OWL JS component -->
+            <script type="text/javascript" src="/mplussoftware/static/src/js/bitcoin_graph.js"></script>
+
+            <!-- Include the SCSS file (compiled as CSS) -->
+            <link rel="stylesheet" href="/mplussoftware/static/src/scss/bitcoin_graph.scss"/>
+        </xpath>
+    </template>
+
+</odoo>

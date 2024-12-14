@@ -1,0 +1,33 @@
+// Define some variables for reusable colors and styles
+$primary-color: #4CAF50;
+$background-color: #f5f5f5;
+$graph-border-color: #ddd;
+$graph-height: 400px;
+$graph-padding: 15px;
+
+#bitcoin-graph-container {
+    width: 100%;
+    height: $graph-height;
+    background-color: $background-color;
+    border: 1px solid $graph-border-color;
+    padding: $graph-padding;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+// Responsive styling for small screens
+@media (max-width: 768px) {
+    #bitcoin-graph-container {
+        height: 300px;
+    }
+}
+
+// Add hover effect to graph container
+#bitcoin-graph-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
